@@ -5,15 +5,25 @@
 /* -------------------------------------------------------------
  *
  * ------------------------------------------------------------ */
-Game::Game() :  mWindow(sf::VideoMode(1920, 1080),"SFML Application"), mTexture(),  mPlayer()
+Game::Game(sf::VideoMode  mode) :  mWindow(mode,"SFML Application"), mTexture(),  mPlayer()
 {
-    if(!mTexture.loadFromFile("Media/Textures/plane.png")) {
+    if(!mTexture.loadFromFile("../Media/Textures/plane.png")) {
       std::cout << "ERROR: cannot load Texture\n";
     }
 
 
+    std::cout << "[DEBUG] Game Constructor\n";
+
+    std::cout << "[DEBUG] Texture is: " << mTexture.getSize().x  << " - " << mTexture.getSize().y << "\n";
+
+
+
+
+
     mPlayer.setPosition(100.f,100.f);
     mPlayer.setTexture(mTexture);
+
+
 
 
 

@@ -14,7 +14,7 @@
 class Game
 {
 public:
-                     Game();
+                     Game(sf::VideoMode mode);
     void              run();
 
 private:

@@ -13,13 +13,14 @@
 #include "Game.h"
 
 
-int main()
-{
-  Game game;
+int main() {
+
+ sf::VideoMode mode =  sf::VideoMode(640, 480);
+ //sf::VideoMode mode =  sf::VideoMode(1920, 1080);
+
+  Game game = Game(mode);
   game.run();
-
-
-    return 0;
+  return 0;
 }
 
 
