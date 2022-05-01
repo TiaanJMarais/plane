@@ -14,37 +14,18 @@
 class Game
 {
 public:
-                     Game(sf::VideoMode mode);
-    void              run();
-
+            Game(sf::VideoMode mode);
+    void    run();
 private:
-
-    void             processEvents();
-    void             update(sf::Time deltaTime);
-    void             render();
-    void             handlePlayerInput(sf::Keyboard::Key key, bool isPressed);
-
-
+    void    processEvents();
+    void    update(sf::Time deltaTime);
+    void    render();
+    void    handlePlayerInput(sf::Keyboard::Key key, bool isPressed);
 private:
 
     sf::RenderWindow mWindow;
     sf::Sprite  mPlayer;
     sf::Texture mTexture;
-
-
-
-    /*
-     *
-     * sf::Texturesf::Sprite...
-Game();
-mTexture;
-mPlayer;
-*/
-
-
-
-
-
 
      bool mIsMovingUp;
      bool mIsMovingDown;
