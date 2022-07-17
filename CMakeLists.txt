@@ -14,7 +14,8 @@ add_executable(plane
                src/Aircraft.cpp
                src/Texture.cpp
                src/Resource.cpp
-
+               src/Enemy.cpp
+               #src/SceneNode.cpp
         )
 
 
@@ -22,6 +23,7 @@ target_include_directories(
     plane
     PRIVATE
     src
+    .
 )
 
 
